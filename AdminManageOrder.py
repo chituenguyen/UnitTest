@@ -13,7 +13,7 @@ class AdminManageOrder(unittest.TestCase):
     @classmethod
     def setUp(self):
         self.driver.get("http://localhost/OnlinePizzaDelivery/admin/login.php")
-        time.sleep(5)
+        time.sleep(2)
 
     @classmethod
     def tearDown(self):
@@ -28,7 +28,7 @@ class AdminManageOrder(unittest.TestCase):
         self.driver.find_element(By.NAME, "username").send_keys("admin")
         self.driver.find_element(By.NAME, "password").send_keys("admin")
         self.driver.find_element(By.NAME, "btn-login").click()
-        time.sleep(5)
+        time.sleep(2)
         # check assign
         self.driver.get("http://localhost/OnlinePizzaDelivery/admin/index.php?page=orderManage")
         nofication = self.driver.find_element(By.NAME, "order_detail")

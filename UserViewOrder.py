@@ -2,6 +2,7 @@ from selenium import webdriver
 import unittest
 from selenium.webdriver.common.by import By
 import time
+import pytest
 
 
 class ViewOrder(unittest.TestCase):
@@ -43,6 +44,7 @@ class ViewOrder(unittest.TestCase):
 
         # check assign
         self.assertEqual("http://localhost/OnlinePizzaDelivery/partials/_loginModal.php", current_url)
+
 
     def test_view_order_with_login_have_items(self):
         self.driver.find_element(By.NAME, "loginusername").send_keys("user2")
