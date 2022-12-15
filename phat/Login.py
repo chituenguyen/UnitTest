@@ -70,15 +70,6 @@ class LoginFeature(unittest.TestCase):
         succ = 'true' if  self.driver.find_elements(By.CSS_SELECTOR,".rounded-circle") else 'false'
         self.assertEqual(succ,"true")
             
-            
-    
-    # def test_a(self):
-    #     if self.accessOk():            
-    #         self.findLoginbtn().click()            
-    #         e = self.driver.find_element(By.ID, 'loginusername').get_attribute("required")
-    #         j = self.driver.find_element(By.ID, 'loginpassword').get_attribute("required")
-    #         print(e)
-    #         print(j)
 
     def findsubmitlogin(self):
         return self.driver.find_elements(By.CSS_SELECTOR, ".btn.btn-success")
