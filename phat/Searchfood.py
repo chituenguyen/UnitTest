@@ -1,3 +1,4 @@
+import HtmlTestRunner
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -58,10 +59,6 @@ class Searchfood(unittest.TestCase):
         result = self.driver.find_elements(By.CSS_SELECTOR, "h2.py-2")
         self.assertEqual([],result)            
 
-
-      
-
-    
     def loggintoapp(self):
         self.findLoginbtn().click()
         self.driver.find_element(By.ID, 'loginusername').send_keys("user1")
@@ -78,8 +75,8 @@ class Searchfood(unittest.TestCase):
         return self.driver.find_element(By.CSS_SELECTOR, "#navbarSupportedContent .btn.btn-success.mx-2")    
     
     def tearDown(self):
-        self.driver.close()
+        self.driver.quit()
 
 
 if __name__ == "__main__":
-    unittest.main()    
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='Result'))

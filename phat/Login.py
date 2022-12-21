@@ -1,3 +1,4 @@
+import HtmlTestRunner
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -86,4 +87,4 @@ class LoginFeature(unittest.TestCase):
         self.driver.close()
 
 if __name__ == "__main__":
-    unittest.main()        
+        unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='Result'))
