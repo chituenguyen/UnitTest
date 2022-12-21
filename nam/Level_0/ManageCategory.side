@@ -1,0 +1,816 @@
+{
+  "id": "fd310f73-196f-494c-acbd-17fc1c205c8a",
+  "version": "2.0",
+  "name": "ManageCategory",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "0427be02-a977-43ac-ba6d-a3db14840632",
+    "name": "TC_006_001",
+    "commands": [{
+      "id": "f74f1a4b-bf18-40e3-92f2-bdb97e216d4d",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4b3c25d-c40c-4eb0-b1ed-3dfe91e7eeb8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b562e7ed-794f-497a-a30b-1d1632994ee5",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "018fe8cc-3451-4fa9-b2e3-9d4559b8ac48",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7fc13b2-3755-4624-a839-8f250b0a401e",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Susi"
+    }, {
+      "id": "ccebcd1f-e77a-43c4-a155-961d68666e28",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Very Delicious"
+    }, {
+      "id": "cffd879b-4dc1-4800-bd08-d69dc23051b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39dd4db4-fa33-4ad8-ae51-1f7c323dbbd9",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "70d9ae97-8972-4dce-a50b-ea56e59c3069",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c9b8c0b-b3f7-465f-b70b-f849d194e58d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }]
+  }, {
+    "id": "1e0f3daa-5dd5-44fb-8f65-734af4236718",
+    "name": "TC_006_002",
+    "commands": [{
+      "id": "1ca97d56-66cb-4e70-a926-3f20991b0781",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd1fdab0-e363-451c-93e9-bfb900ed2134",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "789ecca8-234b-45a5-b370-1043c9d70fc6",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "738084c8-6b03-4b49-a3a7-10b70180120c",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b544f635-288b-4f11-b50e-97f722c872b3",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }, {
+      "id": "e777e24d-e397-4a8c-8b10-f2042066ba7b",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }, {
+      "id": "039c29a7-5ad7-46bc-b881-38e1ed1533f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c98c8a45-2eaf-4dec-b67f-473f9e7f3b35",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "57d408d2-fbf9-4fbd-ba81-687ed1c6072f",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b8260a0-4781-4a23-84db-6ae741327bd7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "ceae7f30-b5ae-44f1-bbd2-7c8a907ee7d7",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }, {
+    "id": "5c6f5264-7b76-4285-b733-50ac21af433b",
+    "name": "TC_006_003",
+    "commands": [{
+      "id": "c1591f09-1e68-4478-be96-0a5cce489cf3",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71554f43-49a9-41cc-871f-d45613100a1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3316c903-c483-4f59-97a3-4b9efc955677",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c2f2bd-bf39-4be8-9c95-c3951d11ae80",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "4dd9dacb-19e1-4e21-a636-8910f8535e6d",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }, {
+    "id": "37feefe6-f613-4862-8473-103764887da1",
+    "name": "TC_006_004",
+    "commands": [{
+      "id": "248744dd-eaa9-4538-9144-a90a5baf2f85",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fa7644e-d960-49db-b434-e9a1e27c5915",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "073c8697-46b1-4c6f-a994-4d9d3ac982f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e45a8eb3-ab8f-40c5-a0c4-d9ddbbbf1a2d",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a840d0-1f3f-4034-b17e-57f1884526e5",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }, {
+      "id": "3462cb10-c92e-4bd1-adb2-06d43f1c0df9",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Very hoy"
+    }, {
+      "id": "074c060c-6859-49d8-ab8a-f0caad70e877",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c19daf-f4f7-4c00-b2f4-0dc49b77248d",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "a4b0ec82-9436-49ac-8cae-9c43cc3ccc89",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e5e40f-1091-46bb-a9b8-69c6ff30224a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "aff7832d-6a43-4b9b-8e74-a87f6646f0ec",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }, {
+    "id": "2b1c1e74-e029-4174-8de8-fc345e63f39f",
+    "name": "TC_006_005",
+    "commands": [{
+      "id": "6792f2d5-b18b-4818-bdcc-f76678a7cf62",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f64edfe-eb7c-40aa-987c-e7ebc97d653d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c891def-6a42-417a-9055-cd8afaecca6b",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c230cf45-b98a-497f-96ff-96d259fe3d95",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0be912e-1e27-4809-948c-fb47b91a84ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hot dog"
+    }, {
+      "id": "249e5acc-a9a7-4a6d-a954-310b2c542bbe",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50c5d33b-46b0-4557-b1a3-7d804634ef88",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4520a78b-8e89-4fc5-a4b4-a52c105a9517",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "937ea932-8912-49b7-ad4b-aca19c866539",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4980a118-20e4-4911-867f-bd20596a5543",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "2d3b2443-66ca-4c13-8874-602d09559b79",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }, {
+    "id": "2000445c-261b-403f-8cc6-34bd381c59b4",
+    "name": "TC_006_006",
+    "commands": [{
+      "id": "c4716665-558d-4b67-86e0-a4840cdfd94c",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faa76689-3eaf-4180-a310-feb83b79fa40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d781aba-5ce8-4343-b622-9793b4b290d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3dd5b5d-7a40-4666-b5c1-0e733c0606f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5cb9ae9-dac6-40e1-9a46-fb1fdbbf0a4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "435df5e7-095e-4fa3-b5df-d2e03a154a7a",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Very hot"
+    }, {
+      "id": "892c2853-b687-451f-acb5-97a5d54fc4da",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0add5008-2de6-4715-aac6-6d0f9dc4a9d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "3be50f5f-6f7e-4ba5-82e4-68b33607d159",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52efb992-7d62-409a-a7a2-1581a637d4df",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "57e99168-82f2-453f-a482-200f928e4abc",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }, {
+    "id": "3bde6b61-d9ce-4370-8126-64f9280620c0",
+    "name": "TC_006_007",
+    "commands": []
+  }, {
+    "id": "821a19c8-9464-40d4-9a7d-e6b663e62952",
+    "name": "TC_006_008",
+    "commands": [{
+      "id": "5c40395e-52f3-4958-a400-91e42222a177",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/admin/index.php?page=categoryManage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e01b7fd3-55cf-43e2-8301-bf43b8999206",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1848x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb2667c7-4a3f-494f-8233-b38ded992c35",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f00d3281-cea9-4844-970e-2dff6b3b87d1",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52c5270f-bccc-4dbe-b4a3-b48e52480aea",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.card-body > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "<scrip>window.location.href='http://www.google.com'</script>"
+    }, {
+      "id": "d2770b1f-d320-49c3-a2d6-63c425242751",
+      "comment": "",
+      "command": "type",
+      "target": "name=desc",
+      "targets": [
+        ["name=desc", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='desc']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Very hot"
+    }, {
+      "id": "735b6877-3bd8-4148-9540-15d79633da26",
+      "comment": "",
+      "command": "click",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f1756bc-5fb4-48da-a216-52273e211e7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=image", "id"],
+        ["name=image", "name"],
+        ["css=#image", "css:finder"],
+        ["xpath=//input[@id='image']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/pop_os_hi/Pictures/susi.jpg"
+    }, {
+      "id": "bcd10428-8511-4cb7-a8f0-db081df9ecd4",
+      "comment": "",
+      "command": "click",
+      "target": "name=createCategory",
+      "targets": [
+        ["name=createCategory", "name"],
+        ["css=.col-sm-3", "css:finder"],
+        ["xpath=//button[@name='createCategory']", "xpath:attributes"],
+        ["xpath=//body[@id='body-pd']/div[2]/div/div/div/form/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52dd4984-1672-4b83-bcf9-263407197958",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "theurl"
+    }, {
+      "id": "be17fae2-c3e8-4ed3-b92c-9d4f3e210e1e",
+      "comment": "",
+      "command": "assert",
+      "target": "theurl",
+      "targets": [],
+      "value": "http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage"
+    }]
+  }],
+  "suites": [{
+    "id": "7000acfe-b642-4678-bf1a-081378d987ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
