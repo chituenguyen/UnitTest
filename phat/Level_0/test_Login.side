@@ -1,0 +1,393 @@
+{
+  "id": "6e17fd9e-53cc-4a00-a874-b01a620a8d91",
+  "version": "2.0",
+  "name": "test_Login",
+  "url": "http://localhost/OnlinePizzaDelivery/",
+  "tests": [{
+    "id": "ba835979-a34c-4e1d-a2fc-6eaff7fd407f",
+    "name": "login_ok",
+    "commands": [{
+      "id": "f83f5365-5abb-4b95-b5e2-086607be016d",
+      "comment": "",
+      "command": "open",
+      "target": "/OnlinePizzaDelivery/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93bb4014-74ab-4246-913a-1db51562b526",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d099cdb9-d180-4381-ba66-558810f12d6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba66a7e9-0b33-4340-947d-e50bbe217e17",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2588bc08-70cd-4634-8f74-be2adb87d6c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "e92a2ad4-afa3-4a26-9775-155f79cd3297",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginpassword",
+      "targets": [
+        ["id=loginpassword", "id"],
+        ["name=loginpassword", "name"],
+        ["css=#loginpassword", "css:finder"],
+        ["xpath=//input[@id='loginpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "b3125182-1ec9-4a76-b06a-88af62b3de02",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='loginModal']/div/div/div[2]/form/button",
+      "targets": [
+        ["css=.btn-success:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8082cfa5-32ed-42a1-a443-8ab385c90774",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Welcome user1",
+      "targets": [
+        ["linkText=Welcome user1", "linkText"],
+        ["css=.nav-item:nth-child(1) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Welcome user1')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Welcome user1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e966687f-31c9-4e07-950d-8e47d5306144",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.rounded-circle",
+      "targets": [
+        ["css=.rounded-circle", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d11a3cee-e5d3-49c9-99d5-38f64fdfdbdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.show > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'partials/_logout.php')]", "xpath:href"],
+        ["xpath=//ul[2]/li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "708b7b50-e954-4be1-94a0-ea97e25e732c",
+    "name": "login_not_match",
+    "commands": [{
+      "id": "d4b69e2b-3e85-442e-9136-a4c5ba0ca495",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/OnlinePizzaDelivery/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d5ad758-710c-4b82-be4c-1b69869e2a95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "231283a3-18a0-4954-83c2-8f829207b0dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adcfd58f-9981-4802-a2f7-43f2199a0519",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "411d8471-f717-4e55-808a-87b9d83a2c5e",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "52fb5674-6a34-44c8-a34f-15528cb5b5a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginpassword",
+      "targets": [
+        ["id=loginpassword", "id"],
+        ["name=loginpassword", "name"],
+        ["css=#loginpassword", "css:finder"],
+        ["xpath=//input[@id='loginpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69966372-c4a8-4071-9429-f9521d37f86f",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginpassword",
+      "targets": [
+        ["id=loginpassword", "id"],
+        ["name=loginpassword", "name"],
+        ["css=#loginpassword", "css:finder"],
+        ["xpath=//input[@id='loginpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "hjdfsaaaaaaaaaaaaaaaaaaaaaaa"
+    }, {
+      "id": "d832bf3b-830a-462c-924c-b44b1b26090f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(3)",
+      "targets": [
+        ["css=.btn-success:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e02a13-8c31-4093-b382-66ec5fc53e9f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div[5]", "xpath:position"]
+      ],
+      "value": "Warning! Invalid Credentials"
+    }]
+  }, {
+    "id": "9638b121-aead-4c39-925a-9ce50ea53999",
+    "name": "login_not_user_name",
+    "commands": [{
+      "id": "0b8a62f4-ed18-4c8d-a35b-f8c3ff68a296",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/OnlinePizzaDelivery/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e45f95e7-9724-48e5-8ccc-e104d9dd2bc6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1158x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3373c34-6edc-48f5-a4bb-321cea12d316",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f456e97b-acd1-49a3-b6c1-405340c55f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(3)",
+      "targets": [
+        ["css=.btn-success:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8d3f45-323b-4059-afb5-70d93a6a9d64",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#loginModal .mb-0",
+      "targets": [
+        ["css=#loginModal .mb-0", "css:finder"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Don't have an account? Sign up now."
+    }]
+  }, {
+    "id": "d720ca70-14e1-4578-aa54-e81cff9a52f9",
+    "name": "login_not_password",
+    "commands": [{
+      "id": "90254071-c6d5-430b-9807-31c279ca411f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/OnlinePizzaDelivery/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8032af1-5fea-4c2f-8523-23d5c5832f77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x957",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d04f1b0-a922-4636-96f6-5626a711cfbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cba9510b-79ea-420f-9e5c-10977dc32dae",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "648f447d-3750-4b1d-b484-622c81770c59",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginusername",
+      "targets": [
+        ["id=loginusername", "id"],
+        ["name=loginusername", "name"],
+        ["css=#loginusername", "css:finder"],
+        ["xpath=//input[@id='loginusername']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "fsdjklfjksjfksjfkskjfsdkj"
+    }, {
+      "id": "cabf61b7-09ec-4964-899e-dcf74754cbea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success:nth-child(3)",
+      "targets": [
+        ["css=.btn-success:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ae1e66f-af75-4f5c-a5f1-3a847714c190",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#loginModal .mb-0",
+      "targets": [
+        ["css=#loginModal .mb-0", "css:finder"],
+        ["xpath=//div[@id='loginModal']/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Don't have an account? Sign up now."
+    }]
+  }],
+  "suites": [{
+    "id": "f2340fa0-c901-439d-b6e2-a668fec51905",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba835979-a34c-4e1d-a2fc-6eaff7fd407f"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/OnlinePizzaDelivery/"],
+  "plugins": []
+}
