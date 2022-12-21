@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-12-14 16:55:08</p>
+                <p class='attribute'><strong>Duration: </strong>53.54 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 8, Pass: 5, Fail: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.categoryManage(Admin)</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_006_001_create_with_valid_fields</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_006_002_create_with_invalid_name_fields</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/pop_os_hi/Documents/HK221/Testing/Assigment3/categoryManage.py", line 51, in test_006_002_create_with_invalid_name_fields
+    self.assertEqual("http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage", current_url)
+  File "/usr/lib/python3.9/unittest/case.py", line 837, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.9/unittest/case.py", line 1217, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.9/unittest/case.py", line 676, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_006_003_create_with_blank_all_fields</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_006_004_create_with_only_name_catagery_invalid</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/pop_os_hi/Documents/HK221/Testing/Assigment3/categoryManage.py", line 65, in test_006_004_create_with_only_name_catagery_invalid
+    self.assertEqual("http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage", current_url)
+  File "/usr/lib/python3.9/unittest/case.py", line 837, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.9/unittest/case.py", line 1217, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.9/unittest/case.py", line 676, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_006_005_create_with_only_description_blank</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_006_006_create_category_with_only_namecategory_blank</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_006_007_check_delete_function</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_006_008_check_especial_input</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/pop_os_hi/Documents/HK221/Testing/Assigment3/categoryManage.py", line 96, in test_006_008_check_especial_input
+    self.assertEqual("http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage", current_url)
+  File "/usr/lib/python3.9/unittest/case.py", line 837, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.9/unittest/case.py", line 1217, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.9/unittest/case.py", line 676, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage' != 'http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php'
+- http://localhost/OnlinePizzaDelivery/admin/index.php?page=categoryManage
+?                                            ----------  ^^^
++ http://localhost/OnlinePizzaDelivery/admin/partials/_categoryManage.php
+?                                              ^^^^^^^^              ++++
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 8, Pass: 5, Fail: 3 -- Duration: 53.54 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
